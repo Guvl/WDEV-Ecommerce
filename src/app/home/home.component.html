@@ -1,6 +1,9 @@
 
     <div class=" container">
         <h1>Produtos de Minha Loja</h1>
+
+        <!-- <h2>{{teste}} </h2> -->
+
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -9,14 +12,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Caneta</td>
-                    <td>R$ 1,80</td>
+                <tr *ngFor="let produto of produtos">
+                    <td>{{produto.descricao}}</td>
+                    <td>R$ {{produto.valor | number: '.2'}}</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>Caderno</td>
                     <td>R$ 2,00</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>
