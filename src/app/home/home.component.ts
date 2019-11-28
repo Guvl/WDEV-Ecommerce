@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { 
     this.produtos = [
-      new Produto('Caneta',10.00),
-      new Produto('Caderno',15.00),
-      new Produto('Caneca',5.00)
+      new Produto('Caneta',10.00, 'https://encurtador.com.br/jqCN1'),
+      new Produto('Caderno',15.00, 'https://encurtador.com.br/kJRV0'),
+      new Produto('Caneca',5.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1VqGgDU3kub44Ykh--AMr7jNTTYYJi7UregqjiEVQdlS-WbSH')
     ];
 
 
